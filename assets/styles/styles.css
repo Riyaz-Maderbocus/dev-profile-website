@@ -8,7 +8,7 @@
 :root {
     --black: #454545;
     /* --white: #f5f5f0; */
-    --white: #fef9ef;
+    --bg-one: #fef9ef;
     --bg-two: #fdfff9;
     --red: #fe6d73;
     --blue: #227c9d;
@@ -20,8 +20,79 @@
 /* body styles */
 html {
     font-family: "Poppins", sans-serif;
+    font-size: 16px;
+
+
 }
 
 body {
+    width: 100%;
+    box-sizing: border-box;
     color: var(--black);
+    background-color: var(--bg-two);
+}
+
+/* navbar */
+
+.navbar {
+    /* width: 100vw; */
+    padding: 1.5rem;
+    background-color: var(--bg-one);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .left-nav .nav-header {
+    font-size: 2.5rem;
+}
+
+.navbar ul .right-nav {
+    display: flex;
+}
+
+.navbar ul .right-nav .nav-link {
+    display: inline-block;
+    font-size: 1.3rem;
+    /* padding: 0 1rem; */
+}
+
+.navbar ul .right-nav .nav-link a {
+    text-decoration: none;
+    padding: 0 1.5rem 1rem;
+    font-weight: 500;
+}
+
+.navbar ul .right-nav .nav-link a:hover {
+    border-bottom: 3px solid var(--red);
+
+}
+
+
+/* media queries */
+@media (width <=500px) {
+
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar .left-nav .nav-header {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        /* font-weight: 100; */
+    }
+
+    .navbar ul .right-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .navbar ul .right-nav .nav-link a {
+        padding: 0 0.75rem 0.5rem;
+    }
 }
