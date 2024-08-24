@@ -36,11 +36,13 @@ body {
 
 .navbar {
     /* width: 100vw; */
-    padding: 1.5rem;
-    background-color: var(--bg-one);
+    padding: 1.5rem 1.5rem 0.5rem;
+    background-color: var(--bg-two);
+    /* height: 10vh; */
 }
 
 .navbar ul {
+    /* height: 10vh; */
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -49,7 +51,8 @@ body {
 }
 
 .navbar .left-nav .nav-header {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .navbar ul .right-nav {
@@ -64,7 +67,7 @@ body {
 
 .navbar ul .right-nav .nav-link a {
     text-decoration: none;
-    padding: 0 1.5rem 1rem;
+    padding: 0 1.5rem 0.5rem;
     font-weight: 500;
 }
 
@@ -113,12 +116,37 @@ section#hero .hero-text h2 {
 
 section#hero .hero-text h3 {
     font-size: 2rem;
-
+    font-weight: 300;
     margin-top: 0.5rem;
 }
 
+/* about section */
+section#about {
+    background-color: var(--bg-one);
+    /* display: flex; */
+    padding: 2rem 1rem 0.5rem;
+}
+
+section#about h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.two-column-container .left-section,
+.two-column-container .right-section {
+    width: 50%;
+    padding: 1rem;
+}
+
+
+
 
 /* media queries */
+
+
 @media (width <=500px) {
 
 
@@ -139,6 +167,7 @@ section#hero .hero-text h3 {
 
     .navbar ul .right-nav .nav-link a {
         padding: 0 0.75rem 0.5rem;
+        margin: 0 0.5rem;
     }
 
     /* hero section */
