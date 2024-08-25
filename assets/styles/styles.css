@@ -86,7 +86,8 @@ body {
     width: 100%;
     box-sizing: border-box;
     color: var(--black);
-    /* background-color: var(--bg-two); */
+    background-color: var(--bg-two);
+    min-height: 100vh;
 }
 
 ul {
@@ -203,7 +204,8 @@ section#about {
 
 
 
-#about .two-column-container .left-section .text-section {
+#about .two-column-container .left-section .text-section,
+#project .two-column-container .left-section .text-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,13 +214,15 @@ section#about {
     height: 100%;
 }
 
-#about .two-column-container .left-section .text-section p {
+#about .two-column-container .left-section .text-section p,
+#project .two-column-container .left-section .text-section p {
     padding: 0.5rem 0;
     font-size: 1.5rem;
 }
 
 
-#about .two-column-container .right-section {
+#about .two-column-container .right-section,
+#project .two-column-container .right-section {
     display: flex;
     /* text-align: center; */
     flex-direction: column;
@@ -228,7 +232,8 @@ section#about {
 }
 
 
-#about .two-column-container .right-section img {
+#about .two-column-container .right-section img,
+#project .two-column-container .right-section img {
     width: 70%;
     min-width: 200px;
     border-radius: 25%;
@@ -307,6 +312,7 @@ section#about {
 
 .project-section .card .btn-blue {
     margin: 2rem 0;
+    margin-top: auto;
 }
 
 
@@ -358,22 +364,48 @@ section#about {
 
 }
 
+/* footer section */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+
+/* project pages */
+
+#project {
+    min-height: 90vh;
+}
+
 /* media queries */
 
-@media (width <700px) {
+@media (width <750px) {
 
     /* about section */
-    #about .two-column-container {
+    #about .two-column-container,
+    #project .two-column-container {
         display: flex;
         flex-direction: column-reverse;
     }
 
     #about .two-column-container .left-section,
-    #about .two-column-container .right-section {
+    #about .two-column-container .right-section,
+    #project .two-column-container .left-section,
+    #project .two-column-container .right-section {
         width: 100%;
     }
 
-    #about .two-column-container .left-section .text-section p {
+    #about .two-column-container .left-section .text-section p,
+    #project .two-column-container .left-section .text-section p {
         font-size: 1.2rem;
         padding: 0.5rem;
 
@@ -388,6 +420,10 @@ section#about {
 
     .project-section .card {
         width: 80%;
+    }
+
+    .project-section .card .btn-blue {
+        margin: 1rem 0;
     }
 
     /* skilsl section */
@@ -417,7 +453,7 @@ section#about {
 
     #contact .two-column-container .left-section .text-section p {
         font-size: 1.2rem;
-        padding: 0.5rem;
+        padding: 1rem;
 
     }
 }
