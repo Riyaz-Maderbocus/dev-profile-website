@@ -97,15 +97,12 @@ ul {
 /* navbar */
 
 .navbar {
-    /* width: 100vw; */
+
     padding: 1.5rem 1.5rem 0.5rem;
-    /* background-color: var(--bg-two); */
-    /* height: 10vh; */
+
 }
 
 .navbar ul {
-    /* height: 10vh; */
-    /* list-style: none; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -124,7 +121,6 @@ ul {
 .navbar ul .right-nav .nav-link {
     display: inline-block;
     font-size: 1.3rem;
-    /* padding: 0 1rem; */
 }
 
 .navbar ul .right-nav .nav-link a {
@@ -170,7 +166,6 @@ section#hero .hero-text {
 
 section#hero .hero-text {
     color: var(--black);
-    /* color: black; */
 }
 
 
@@ -193,14 +188,8 @@ section#hero .hero-text h3 {
 /* about section */
 section#about {
     background-color: var(--bg-one);
-    /* display: flex; */
     padding: 2rem 1rem 0.5rem;
 }
-
-/* section#about h3 {
-    font-size: 1.8rem;
-    text-align: center;
-} */
 
 
 
@@ -209,8 +198,6 @@ section#about {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* padding: 1rem; */
     height: 100%;
 }
 
@@ -224,7 +211,6 @@ section#about {
 #about .two-column-container .right-section,
 #project .two-column-container .right-section {
     display: flex;
-    /* text-align: center; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -243,11 +229,6 @@ section#about {
 
 /* skills section */
 
-/* #skills .text-section {
-    margin: 0 auto;
-    width: 80%;
-} */
-
 #skills p {
     font-size: 1.5rem;
     padding: 1rem 0;
@@ -258,14 +239,13 @@ section#about {
 #contact .logo-section .logo-list {
     display: flex;
     flex-direction: row;
-    /* background-color: var(--bg-one); */
     justify-content: space-evenly;
     margin: 1rem 0;
 }
 
 #skills .logo-section .logo-list .logo-item .logo,
 #contact .logo-section .logo-list .logo-item .logo {
-    /* width: 50px; */
+
     height: 60px;
 }
 
@@ -287,7 +267,6 @@ section#about {
 
 .project-section .card {
     width: 30%;
-    /* height: 100px; */
     border: 3px solid var(--blue);
     border-radius: 15px;
     display: flex;
@@ -316,27 +295,11 @@ section#about {
 }
 
 
-/* Contact section */
-
-
-/* section#about {
- 
-    padding: 2rem 1rem 0.5rem;
-} */
-
-/* section#about h3 {
-    font-size: 1.8rem;
-    text-align: center;
-} */
-
-
-
 #contact .two-column-container .left-section .text-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* padding: 1rem; */
+
     height: 100%;
 }
 
@@ -359,7 +322,7 @@ section#about {
 #contact .two-column-container .right-section img {
     width: 80%;
     max-width: 450px;
-    /* min-width: 200px; */
+
     border-radius: 25%;
 
 }
@@ -413,7 +376,7 @@ footer p {
 
     .project-section {
         flex-direction: column;
-        /* justify-content: center; */
+
         align-items: center;
         gap: 20px;
     }
@@ -434,7 +397,7 @@ footer p {
     }
 
     #skills .logo-section .logo-list .logo-item .logo {
-        /* width: 50px; */
+
         height: 30px;
     }
 
@@ -469,7 +432,7 @@ footer p {
     .navbar .left-nav .nav-header {
         font-size: 2rem;
         margin-bottom: 0.5rem;
-        /* font-weight: 100; */
+
     }
 
     .navbar ul .right-nav .nav-link {
