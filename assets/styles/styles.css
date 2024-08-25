@@ -55,6 +55,25 @@
     padding: 1rem;
 }
 
+.btn-blue {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.btn-blue:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn-blue a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* body styles */
 html {
     font-family: "Poppins", sans-serif;
@@ -150,17 +169,24 @@ section#hero .hero-text {
 
 section#hero .hero-text {
     color: var(--black);
+    /* color: black; */
 }
+
 
 section#hero .hero-text h2 {
     font-size: 3rem;
-
+    text-shadow: 4px 4px 0 rgb(0, 0, 0, 0.1);
+    color: black;
 }
+
+
 
 section#hero .hero-text h3 {
     font-size: 2rem;
+    text-shadow: 4px 4px 0 rgb(0, 0, 0, 0.1);
     font-weight: 300;
     margin-top: 0.5rem;
+    color: black;
 }
 
 /* about section */
@@ -211,6 +237,12 @@ section#about {
 
 
 /* skills section */
+
+/* #skills .text-section {
+    margin: 0 auto;
+    width: 80%;
+} */
+
 #skills p {
     font-size: 1.5rem;
     padding: 1rem 0;
@@ -233,34 +265,62 @@ section#about {
 
 /* work section */
 
-#work h4 {
+#projects h4 {
     text-align: center;
     font-size: 1.5rem;
 }
 
-#work .project-section {
+.project-section {
     display: flex;
     padding: 1rem;
     margin: 1rem;
+    justify-content: space-between;
+    gap: 10px;
 }
 
-#work .project-section .card {
+.project-section .card {
     width: 30%;
     /* height: 100px; */
-    border: 1px solid black;
+    border: 3px solid var(--blue);
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
 }
 
-#work .project-section .card img {
+.project-section .card img {
     max-width: 60%;
     border-radius: 30px;
 }
 
+.project-section .card .project-title {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+}
+
+.project-section .card .project-text {
+    margin: 0.25rem;
+}
+
+.project-section .card .btn-blue {
+    margin: 2rem 0;
+}
+
 /* media queries */
 
+@media (width <700px) {
+    .project-section {
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project-section .card {
+        width: 80%;
+    }
+}
 
 @media (width <=500px) {
 
@@ -316,6 +376,7 @@ section#about {
     #about .two-column-container .left-section .text-section p {
         font-size: 1rem;
         padding: 0.5rem;
+
     }
 
     /* skilsl section */
